@@ -6,6 +6,9 @@ PORT = 3000;
 
 connectDB;
 
+
+app.use(express.json());
+
 app.get("/",(req,res)=>{
     res.send("app is running");
 });
