@@ -3,7 +3,7 @@ const connectDB = mongoose.connect("mongodb://atlas-sql-652f6f1ef30f77480719340c
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(()=>{
-    console.log("connexted");
+    console.log("connected");
 }).catch((err)=>{
     console.log(err);
 });

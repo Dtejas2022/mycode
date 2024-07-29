@@ -1,9 +1,10 @@
 const express = require("express");
+// const mongoose = require('mongoose');
 const app = express();
-require('./batabase/database');
+const connectDB = require('./batabase/database');
 PORT = 3000;
 
-connectDB();
+connectDB;
 
 app.get("/",(req,res)=>{
     res.send("app is running");
@@ -11,4 +12,4 @@ app.get("/",(req,res)=>{
 
 app.listen(PORT,()=>{
     console.log(`listening on port ${PORT}`);
-})
+});
