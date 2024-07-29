@@ -8,19 +8,17 @@ const userSchema = new mongoose.Schema({
     },
 
     password : { 
-        type: password,
+        type:String,
         require:true
     }
 
 });
 
-const User = new mongoose.model("user", userSchema);
+const userModel = new mongoose.model("user", userSchema);
 
-const user1 = new User({
+const user1 = new userModel({
     userName:'tejas',
     password:"tejas@m123"
 });
-
 user1.save();
-
-module.exports = userSchema;
+// module.exports = User;
